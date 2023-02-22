@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Gijs}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Koot}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Lead Data Scientist} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Amersfoort, Netherlands}\\
+	\icon{Phone}{12}{+31 6 2136 4611}\\
+	\icon{At}{12}{\href{mailto:gijskoot@gmail.com}{gijskoot@gmail.com}}\\
+  \icon{StackOverflow}{12}{\href{https://stats.stackexchange.com/users/137593/gijs}{stats.stackexchange.com/gijs}}
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://gijskoot.nl}{gijskoot.nl}}\\
+	\icon{Github}{12}{\href{https://github.com/gijskoot}{github.com/gijskoot}}\\
+	\icon{Linkedin}{12}{\href{https://linkedin.com/in/gijskoot}{linkedin.com/in/gijskoot}}\\
+
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{About}
+
+\begin{minipage}[t]{0.6\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+Hands-on team lead in data science. I am motivated to work on public services. My areas of expertise are machine learning, computer vision, spatial analysis and Python programming. With 10 years of experience, I am familiar with many areas within data science and data engineering. \\
+
+Looking for a job as a individual contributor, preferably leading a small team of data scientists and engineers. I prefer roles where I am developing models or coding at least 50\% of my working hours. As a developer and writer, I keep things simple and I am good at choosing the right technology for the job.\\
+
+This page is an overview, see \href{https://linkedin.com/in/gijskoot}{LinkedIn profile} for more details on education and more working experience.
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.3\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{2.5}
+		\baritem{Machine Learning}{80}
+    \baritem{Computer Vision}{70}
+		\baritem{Pytorch}{70}
+    \baritem{Spatial analysis}{60}
+		\baritem{AWS}{50}
+	\end{barchart}
+\end{minipage}
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2020/1 -- }
+		{Lead Data Scientist}
+		{SpotR.ai}
+		{SpotR is creating an application that enable large-scale insights in building portfolios. The data we analyze consists of images and spatial datasets. I have architected the machine learning platform we use for training computer vision models. This platform builds on Pytorch Lightning, the Hydra configuration framework, AWS Batch and a homegrown data format for large datasets. I also developed an internal package for camera transformations based on OpenCV. }
+	\entry
+		{2018/6 -- 2020/1}
+		{Consultant Data Scientist}
+		{Urban Science - Axians}
+		{Urban Science is a unit within Axians, a software consulting company. This new team applies data science to challenges that arise in urban areas. The main project I worked on was at Spotr.ai and I moved to an in-house role at Spotr.ai after working there for a year as an external consultant.}
+	\entry
+    {2016/6 -- 2018/6}
+		{Consultant Data Scientist}
+		{Xomnia}
+		{Working as a consultant and as a trainer. Specializing in text mining and applied probability. Projects include sales forecasting at Teva, developing a data science training course at the municipality of Utrecht and a project on HR analytics at Yacht.}
+  \entry
+		{2012/10 -- 2016/6}
+		{Scientist / Innovator}
+		{TNO}
+		{The Media Mining group applies techniques from Natural Language Processing, data science and computer vision to cybercrime, social media, smart cities and media personalization. As a Scientist / Innovator, I coauthored publications and developed application prototypes.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2003 -- 2011}
+		{MSc., Mathematics}
+		{University of Amsterdam}
+		{Specialization in Stochastics and Financial Mathematics. Courses in Stochastic Processes, Portfolio Theory. Noncompulsary courses in Logic, Psychology, Scheduling and Game Theory. Member of the Education Committee, mentor for new students, assistent teacher for Calculus and Linear Algebra.
+    }
+    \entry {2022}{Basic Modeling for Discrete Optimization}{Coursera}{}
+  \entry {2016}{Probabilistic Graphical Models, Machine Learning}{Coursera}{}
+  \entry {2012}{Advanced Pattern Recognition}{TU Delft}{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Technologies}
+ 
+	\textbf{Python} - expert\\
+  \textbf{AWS} - proficient\\
+  \textbf{PostGIS} - proficient\\
+  \textbf{R} - proficient\\
+  \textbf{Julia} - intermediate
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Other}
+
+	In my spare time I like playing guitar and enjoy rock climbing. I live in Amersfoort with two kids. tI use Spacemacs as my daily editor. I enjoy programming puzzles and competitions such as Advent of Code.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Competitions}
+\begin{itemize}
+\item {Power Laws: Cold Start Energy Forecasting, drivendata.org}
+\item {Segmenting Buildings for Disaster Resilience, drivendata.org}
+\item {Accountability Hackathon 2016, encouragement prize}
+\end{itemize}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
